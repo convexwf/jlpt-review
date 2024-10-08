@@ -5,7 +5,7 @@
 			"bookmarks": [
 				{
 					"line": 45,
-					"column": 17,
+					"column": 18,
 					"label": ""
 				},
 				{
@@ -24,8 +24,33 @@
 					"label": ""
 				},
 				{
+					"line": 232,
+					"column": 10,
+					"label": ""
+				},
+				{
+					"line": 283,
+					"column": 9,
+					"label": ""
+				},
+				{
 					"line": 300,
 					"column": 18,
+					"label": ""
+				},
+				{
+					"line": 370,
+					"column": 13,
+					"label": ""
+				},
+				{
+					"line": 402,
+					"column": 10,
+					"label": ""
+				},
+				{
+					"line": 1182,
+					"column": 17,
 					"label": ""
 				},
 				{
@@ -36,6 +61,11 @@
 				{
 					"line": 1622,
 					"column": 12,
+					"label": ""
+				},
+				{
+					"line": 1841,
+					"column": 10,
 					"label": ""
 				},
 				{
@@ -66,6 +96,36 @@
 				{
 					"line": 8592,
 					"column": 17,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "resource/JLPT真题/jlpt_N1_grammar_type4.md",
+			"bookmarks": [
+				{
+					"line": 8,
+					"column": 22,
+					"label": ""
+				},
+				{
+					"line": 25,
+					"column": 17,
+					"label": ""
+				},
+				{
+					"line": 57,
+					"column": 16,
+					"label": ""
+				},
+				{
+					"line": 1069,
+					"column": 14,
+					"label": ""
+				},
+				{
+					"line": 1118,
+					"column": 16,
 					"label": ""
 				}
 			]
