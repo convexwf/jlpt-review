@@ -116,7 +116,7 @@
 			]
 		},
 		{
-			"path": "resource/JLPT真题/jlpt_N1_grammar_type4.md",
+			"path": "resource/JLPT真题/文法/jlpt_N1_grammar_type4.md",
 			"bookmarks": [
 				{
 					"line": 8,
@@ -141,6 +141,31 @@
 				{
 					"line": 1118,
 					"column": 16,
+					"label": ""
+				},
+				{
+					"line": 1126,
+					"column": 14,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "resource/JLPT真题/文法/jlpt_N1_grammar_type5.md",
+			"bookmarks": [
+				{
+					"line": 83,
+					"column": 84,
+					"label": ""
+				},
+				{
+					"line": 93,
+					"column": 59,
+					"label": ""
+				},
+				{
+					"line": 105,
+					"column": 64,
 					"label": ""
 				}
 			]
