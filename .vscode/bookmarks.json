@@ -116,55 +116,55 @@
 			]
 		},
 		{
-			"path": "resource/JLPT真题/文法/jlpt_N1_grammar_type4.md",
+			"path": "resource/JLPT真题/文法/JLPT.N1.文法形式の判断.md",
 			"bookmarks": [
 				{
-					"line": 8,
+					"line": 53,
 					"column": 22,
 					"label": ""
 				},
 				{
-					"line": 25,
+					"line": 70,
 					"column": 17,
 					"label": ""
 				},
 				{
-					"line": 57,
+					"line": 102,
 					"column": 16,
 					"label": ""
 				},
 				{
-					"line": 1069,
+					"line": 1114,
 					"column": 14,
 					"label": ""
 				},
 				{
-					"line": 1118,
+					"line": 1163,
 					"column": 16,
 					"label": ""
 				},
 				{
-					"line": 1126,
+					"line": 1171,
 					"column": 14,
 					"label": ""
 				}
 			]
 		},
 		{
-			"path": "resource/JLPT真题/文法/jlpt_N1_grammar_type5.md",
+			"path": "resource/JLPT真题/文法/JLPT.N1.文の組み立て.md",
 			"bookmarks": [
 				{
-					"line": 83,
+					"line": 106,
 					"column": 84,
 					"label": ""
 				},
 				{
-					"line": 93,
+					"line": 116,
 					"column": 59,
 					"label": ""
 				},
 				{
-					"line": 105,
+					"line": 128,
 					"column": 64,
 					"label": ""
 				}
