@@ -4,7 +4,7 @@
 # @FileName : scripts/jlpt_problem/jlpt_test_data.py
 # @Author : convexwf@gmail.com
 # @CreateDate : 2024-12-21 10:41
-# @UpdateTime : 2024-12-21 10:41
+# @UpdateTime : 2024-12-26 11:20
 
 import re
 import time
@@ -512,6 +512,10 @@ def extract_jlpt_N1_listening(year_month_list):
         response = requests.get(url)
         if response.status_code != 200 or "問題" not in response.text:
             continue
+        # with open(f"tmp/{year_month}.html", "w+", encoding="utf-8", newline="\n") as f:
+        #     f.write(response.text)
+        print(url)
+
         doc = pq(response.text)
 
         print(f"Extracting {year_month} N1 Listening ...")
@@ -519,7 +523,6 @@ def extract_jlpt_N1_listening(year_month_list):
         year_month = year_month[:4] + "." + year_month[4:]
         info_list = [f"# {year_month} N1 听力原文\n\n"]
         big_index = 0
-        GT_index = 1
         form = doc("form[name='dttn']")
         for div_child in form.children():
             if div_child.tag != "div":
@@ -530,8 +533,7 @@ def extract_jlpt_N1_listening(year_month_list):
             elif div_child.attrib.get("class") == "question_list":
                 bango = div_child.text.strip()
                 info_list.append(f"**{bango}**\n\n")
-            elif div_child.attrib.get("id") == f"GT{GT_index}":
-                GT_index += 1
+            elif div_child.attrib.get("id", "").startswith("GT"):
                 refer = (
                     pq(div_child)
                     .text()
@@ -631,7 +633,7 @@ def get_choice_text(filename):
 
 if __name__ == "__main__":
     year_month_list = []
-    for year in range(2010, 2025):
+    for year in range(2024, 2025):
         for month in ["07", "12"]:
             year_month = str(year) + month
             year_month_list.append(year_month)
@@ -645,10 +647,10 @@ if __name__ == "__main__":
     # extract_jlpt_N1_reading_type1(year_month_list)
     # extract_jlpt_N1_reading(year_month_list)
 
-    extract_jlpt_vocabulary(year_month_list)
+    # extract_jlpt_vocabulary(year_month_list)
 
     # print(get_choice_text("/home/ubuntu/work/practice/jlpt-review/JLPT.N1.漢字読み.md"))
 
-    # extract_jlpt_N1_listening(year_month_list)
+    extract_jlpt_N1_listening(year_month_list)
 
     # get_tuhocjlpt("https://www.tuhocjlpt.com/test/1862")
